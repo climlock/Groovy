@@ -1,0 +1,9 @@
+package com.mishanya.closure;
+
+public class test {
+    public static void main(String[] args) {
+        ClosureRunner closureRunner = new ClosureRunner();
+
+        closureRunner.something();
+    }
+}

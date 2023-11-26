@@ -9,6 +9,5 @@ public class test {
         int x = 10;
         var i = x != 0 ? x : 1 ;
         System.out.println(i);
-
     }
 }

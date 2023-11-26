@@ -26,6 +26,7 @@ class ClosureRunner {
 //            .map(value -> value+value)
 //            .map(func)
             .map(closure)
+
 //            .map (String::valueOf)
             .map (String.&valueOf)
             .forEach (System.out::println)

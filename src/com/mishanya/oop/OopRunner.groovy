@@ -5,13 +5,13 @@ class OopRunner {
     static void main(String[] args) {
 
         def student = new Student()
-        student.firsName = "Ivan"
-        println student.firsName
+        student.firstName = "Ivan"
+        println student.firstName
         println student['firsName']
-        println student.'firsName'
-        println student.@firsName       // not recommended
+        println student.firstName
+        println student.@firstName       // not recommended
 
-        def student1 = new Student(firsName: 'Petr', lastName: 'Petrov', age: 19, id: 1)
+        def student1 = new Student(firstName: 'Petr', lastName: 'Petrov', age: 19, id: 1)
         println student1
 
         student1.properties.each { println it}
@@ -23,7 +23,7 @@ class OopRunner {
         println fn
         println ln
 
-        assert [student1, student2].collect {it.firsName} == ['Petr', "Sveta"]
-        assert [student1, student2]*.firsName == ['Petr', "Sveta"]
+        assert [student1, student2].collect {it.firstName} == ['Petr', "Sveta"]
+        assert [student1, student2]*.firstName == ['Petr', "Sveta"]
     }
 }
